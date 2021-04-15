@@ -5,5 +5,14 @@
   "license": "MIT",
   "dependencies": {
     "kafkajs": "^1.15.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "dev:tsc": "tsc -w",
+    "dev:node": "nodemon ./dist/index.js",
+    "all": "concurrently \"yarn run dev:tsc\" \"yarn run dev:node \""
   }
 }
