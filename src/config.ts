@@ -2,7 +2,7 @@ const Config = {
     brokers: [
         "localhost:9092"
     ],
-    topic: 'test-1'
+    topic: 'wordpress.wp_users'
 }
 
 export default Config;
